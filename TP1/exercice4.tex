@@ -1,0 +1,98 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{blindtext}
+\usepackage{hyperref}
+
+\title{Des maths, des maths!}
+\author{Mustafa Kaya}
+\date{\today}
+
+\begin{document}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+%Question 2: Le rendus n est pas beau
+3-2+4=5
+
+%Question 3: Le rendus est beaucoup plus classe
+$3-2+4=5$
+
+%Qestion 4
+% En mode normale le resultat provoque une erreur
+% tandis que en mode math c'est mis a la puissance
+
+$2^{10}=1024$
+
+%Qestion 5
+$a_{1} \times a_{2} \times \ldots\times a_{n}$
+
+%qestion 6:
+$a_{1} \times a_{2} \times \cdots \times a_{n}$
+
+%Question 7
+$ 3 < 4 , 5 > 4$
+$\leq$ % Plus petit ou egale
+$\geq$ % Plus grand ou egale
+
+%Question 8
+$\exists{x}, \forall{n}, \neq, \iff, \sim, \hookrightarrow$
+$\cos{\theta}, \sin{\theta}, \tan{\theta} \lim$
+$\frac{1}{7}$
+$\infty$
+
+%Qestion 9
+%mathtools paquets
+$\implies$
+
+%amssymb
+$\nleq, \ngeq$
+
+%Question 10
+% environnement equation mathtools packets
+\begin{equation*}
+    e = mc^{2}
+\end{equation*}
+
+%Question 11
+% la diffe c ets que equation c est numerotable
+% donc on peut lui associer un label
+\begin{equation*}
+    e = mc^{2} 
+\end{equation*}
+\begin{equation*}
+    cos(\frac{\pi}{2}) = 0
+\end{equation*}
+
+\begin{equation}
+    \exp{0}=1
+\end{equation}
+\begin{equation}
+    % Question 12 on voit la reference "1" de l equation
+    e = mc^{2} \label{equation/ettiquette1}
+\end{equation}
+\begin{equation}
+    cos(\frac{\pi}{2}) = 0
+\end{equation}
+
+\blindtext[2]
+%Question 13 c est exactement la reference de l equationa vec la parenthese
+% Qestion 14 sa a changer le num de referencement
+et ensuite voici une reference à \eqref{equation/ettiquette1}
+
+%Question 15
+$\forall_{k} < n, \text{k est un diviseur de n!}$
+\section{Question 16}
+Trop long est inutile
+
+%Question 17
+\begin{equation*}
+    \lim_{\theta \rightarrow (\frac{\pi}{2})^{-}} {tan(\theta) = \infty}
+\end{equation*}
+
+\end{document}
