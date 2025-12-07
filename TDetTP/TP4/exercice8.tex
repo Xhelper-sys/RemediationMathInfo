@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{ragged2e}
+% Question 5 : apporte des chagement au lien 
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+\usepackage{cleveref}
+\usepackage{amsthm}
+\usepackage{xcolor} % paquet qui sert a ecrire en couleur
+
+%Question 6 
+\usepackage{soul}
+%Paquet qui ameliore et le surlignage
+%et une amelioration de utf8
+\author{Mustafa}
+\title{Coloration}
+\date{\today}
+
+%Question 8
+\newcommand{\surligne}[2][pink]{{\sethlcolor{#1}\hl{#2}}\xspace}
+%Question 10
+\newcommand{\bgfg}[3]{\sethlcolor{#1} \textcolor{#2}{\hl{#3}} }
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+%Question 1
+\textcolor{blue}{bleu}, 
+\textcolor{red}{rouge},
+\textcolor{green}{vert},
+\textcolor{gray}{gris},
+\textcolor{purple}{violet},
+\textcolor{purple}{e}\textcolor{yellow}{t}\textcolor{pink}{c}
+
+%Question3
+\colorlet{firstnamecolor}{gray}
+\colorlet{lastnamecolor}{cyan}
+
+%Question 4 elle change la couleur de 
+% la page courant
+\pagecolor{white}
+
+\newpage
+
+\url{https://google.com} \\
+
+\sethlcolor{green} % Question 7
+\hl{vert} 
+% Question 6 par defaut il surligne en 
+% transparant
+
+\surligne[pink]{hello}
+\hl{vert?}
+
+\bgfg{pink}{red}{blabla}
+
+
+\end{document}

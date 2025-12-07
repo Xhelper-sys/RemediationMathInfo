@@ -1,0 +1,78 @@
+\documentclass[12pt]{article} %Question 4
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{amsthm}
+
+\author{Mustafa}
+\title{Définition de commande}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Defintion de commande question 3%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\textti}[1]{{\tiny #1}\xspace}
+\newcommand{\textscriptsize}[1]{{\scriptsize #1}\xspace}
+\newcommand{\textfootnotesize}[1]{{\footnotesize #1}\xspace}
+\newcommand{\textsmall}[1]{{\small #1}\xspace}
+\newcommand{\textnormalsize}[1]{{\normalsize #1}\xspace}
+\newcommand{\textlargenormal}[1]{{\large #1}\xspace}
+\newcommand{\textmidlarge}[1]{{\Large #1}\xspace}
+\newcommand{\texttreslarge}[1]{{\LARGE #1}\xspace}
+\newcommand{\texthuge}[1]{{\huge #1}\xspace}
+\newcommand{\texttresgand}[1]{{\Huge #1}\xspace}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+%Question 5
+\fontsize{90pt}{100pt}\selectfont Salut \\
+Le Monde
+
+\fontsize{2pt}{2pt}\selectfont Salut Le Monde
+
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+% Question 1
+\Huge U\huge n\LARGE i\Large v\large e\normalsize r\small s\footnotesize i\scriptsize t\tiny é
+\Huge C\huge l\LARGE e\Large r\large m\normalsize o\small n\scriptsize t\scriptsize -\Huge A\huge u\LARGE v\Large e\large r\normalsize g\small n\footnotesize e \scriptsize !
+
+%Question 2 il est impacter il n existe pas
+%de commande qui permette cette limite de
+%l'envrionnement
+\Huge{J} \\
+J
+
+\normalsize
+%Question 3
+
+\textti{tiny} 
+\textscriptsize{scriptsize}
+\textfootnotesize{foornotesize}
+\textsmall{small}
+\textnormalsize{normalsize}
+\textlargenormal{large}
+\textmidlarge{Large}
+\texttreslarge{LARGE}
+\texthuge{huge}
+\texttresgand{Huge} -
+voilà mes différentes tailles.
+
+
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+% Question 5
+\usepackage{lmodern} % sert a avoir des caracetre svg
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{amsthm}
+
+%% Question 4
+%% Question 3
+%\usepackage{times} %permet d'introduire
+% d autre polices 
+
+
+
+\author{Mustafa}
+\title{Définition de commande}
+\date{\today}
+
+\begin{document}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+%Question 1
+\begin{flushleft}
+\textrm{Je suis en police par défaut.} 
+\textsf{Je suis en police avec empattement.}
+\texttt{Je suis en police à chasse fixe.}
+Je suis en police roman, explicitement    
+\end{flushleft}
+
+% Question 2
+\begin{enumerate}
+    \item  Je ne change la police par défaut...
+    \item ...qu’à partir de \sffamily maintenant, pour une police sans empattement...
+    \item ...qui continue un petit moment...
+    \item ...avant d’être \rmfamily finalement changée...
+    \item ... pour la police par défaut...
+    \item ... puis pour \ttfamily la police à chasse fixe...
+    \item ... qui continue...
+    \item ... encore et encore, \rmfamily mais pas jusqu’au bout.
+\end{enumerate}
+Après la liste, je retrouve la police par défaut.
+\end{document}

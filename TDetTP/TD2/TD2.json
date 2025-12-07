@@ -1,0 +1,23 @@
+{
+    "Les listes":{
+        "Liste numeroter": "environnement enumerate",
+        "Liste non numeroter": "environnement itemize",
+        "Liste descriptive (prend un argument Page 7)":"environnement description",
+        "A l interieur":"\\item"
+    },
+    "Les paquets":{
+        "enumitem":"permet de mieux gérer les listes -> Page 8",
+        "microtype":"permet de mieux gerer les alignements",
+        "ragged2e":"apporte des versions améliorer ainsi que justify et \\justifying",
+        "hyperref":"les réferences deviennent cliquable, page 21/ permet des references externe page 22",
+        "le paquet cleveref":"permet le referencement intelignet, Page 23"
+    },
+    "Command Autre":{
+        "\\mbox{text}":"permet de rendre le mot insécable",
+        "Changer l'alignement de l'environnement avec des commandes":"page 11",
+        "\\par":"pour indiquer un paragraphe",
+        "retour a la ligne manuels":"page 16",
+        "espace verticaux":"page 17"
+    }
+
+}

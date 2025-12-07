@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{amsthm}
+
+\author{Mustafa}
+\title{Forme}
+\date{\today}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+%Question 1
+\begin{flushleft}
+L'\textit{italique} est différent
+du \textsl{slanted}. Le \textsl{slanted}
+est différent du texte droite. 
+\textup{Le texte droit est très 
+clairement différent du}\textsc{
+ texte en petites capitales.
+}    
+\end{flushleft}
+
+%Question 2
+% soit on applique a l'endroit 
+% specifique \textsc{} soit
+% on utilise l'environnement scshape
+
+%Question 4
+\bfseries
+\itshape
+Je suis un texte gras et italique
+\\
+\bfseries
+\slshape
+Je suis un texte en grase et slanted
+\\
+\bfseries
+\textsc{Je suis un texte en grase et small caps}
+% en slanted et small caps le gras ne fonctionne pas
+\\
+%Question 5
+\upshape
+\emph{Mustafa} \\
+\itshape
+\emph{Mustafa}
+\end{document}

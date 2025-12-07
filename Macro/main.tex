@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage[french]{babel} % pour la langue verifier avec la commande \languagename
+\usepackage[T1]{fontenc} % pour la police d'écriture
+\usepackage[utf8]{inputenc} % pour l'encodage et la comptabiliter
+\usepackage{blindtext} % Permettant de generer des paragraphes \blindtext[args]
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref} % Permet de cliquer sur les elements contenant un lien
+\usepackage{mathtools} % mathtools paquets $\implies$ / environnement equations
+\usepackage{amssymb} % amssymb $\nleq, \ngeq$
+\usepackage{enumitem} % gere mieux les listes styles / espaces references ...
+\usepackage{microtype} % gere les alignements de facon a ce que sa soit afficher correctement
+\usepackage{ragged2e} %  version améliorer de certain environnement & commandes
+\usepackage{cleveref} % referencement inteligent ( a utiliser apres le paquet hyperref)
+\usepackage{amsthm} % paquet qui fournit des commandes qui inclues des environnements theorem/ proof = preuve ....
+\usepackage{upquote} % Les symbole de guillemets plus precis
+\usepackage{multirow} % permet de fusionner des cellules verticalement
+\usepackage{hhline} % une variante de \hline qui gere joliment les intersection
+
+%%% Gere les specifications de colonnes %%%
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{array}
+\usepackage{tabularray} % ameliore tout !
+\usepackage{standalone} % ignore la preambule d un fichier a inclure 
+\usepackage{xr} % permet de faire des refence via d autre doc
+\usepackage{graphicx} % permet d inclure des image \includegraphics
+\usepackage{xspace} % met un espace quand on ena besoin
+\usepackage{xparse} % permet de définir des commandes avec des arguments avancer
+\usepackage{xifthen} % permet d'ecrire des condition
+\usepackage{lmodern} % permet d utiliser les lettre vectoriel quand on zoom
+\usepackage{xcolor} % paquet qui sert a ecrire en couleur \textcolor{blue}{bleu}
+\usepackage{listing} % permet d inclure du code et dappliquer du syle selon le language de programmation \lstinline[language=python]{print("Hello World")}
+\usepackage{minted} % en meilleur avec de la couleur que listing
+\usepackage{float} % redefinir les styles des enivronnements flottants des nv environnements ...
+
+
+%\setcounter{tocdepth}{2} % table des matieres a quelle profondeur il faut aller
+%\newtheorem{theorem}{Théorème}
+%\newcommand{\myname}{Kaya Mustafa\xspace}
+%\newcommand{\textsmall}[1]{{\small #1}\xspace}
+%\newcommand{\surligne}[2][pink]{{\sethlcolor{#1}\hl{#2}}\xspace}
+
+\title{TITRE}
+\author{Mustafa Kaya}
+\date{\today}
+
+\begin{document}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+\end{document}

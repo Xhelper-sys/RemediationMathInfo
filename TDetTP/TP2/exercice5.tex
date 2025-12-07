@@ -1,0 +1,33 @@
+%Exercice 5
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{upquote} % Les symbole de guillemets plsu precis
+
+\title{Quantificateur en tableau}
+\author{Mustafa Kaya}
+\date{\today}
+
+\begin{document}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+% 1 Les sigles of et fg signifie les les guillemets francais
+% ouvrant et fermant et c'est commande ne sont pas définis sans
+% l impport de french babel
+\begin{center}
+TABLE 1 - Tableau de guillemets
+\begin{tabular}{c c c c c}
+    \textbf{nom} & \textbf{nom anglais} & \textbf{utf8} & \textbf{code \LaTeX} & \textbf{rendu} \\ \hline
+    simples guillemets & simple quotes & `hey' & \verb|`hey`| & `hey' \\
+    doubles guillemts & double quotes & ``hey'' & \verb|``hey''| & ```hey'' \\
+    guillemets francais & french quotes & \og hey\fg & \verb|\og hey\fg| & \og hey\fg
+
+\end{tabular}
+\end{center}
+\end{document}

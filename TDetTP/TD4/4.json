@@ -1,0 +1,37 @@
+{
+    "Les tableaux":"Page 18",
+    "Les bordures des tableaux":"Page 19",
+    "\\multicolumn{nb_de_colonne_a_fusionner}{placement}{text}":"page 20",
+    "fusion verticale":{
+        "paquet multirow":"\\multirow permet de fusionner verticalement"
+    },
+    "Insetion de ligne":"le paquet hhline offre \\hhline a la place de \\hline",
+    "pour aller plus loin":"page 27",
+
+
+    "input{chemin-vers-fichier}":"permet d'utiliser des fichiers avec du contenus puissant",
+    "l'inclusion de source pour aller plsu loin":"Page 25",
+    "la classe standalone avec la commande \\includestandalone":"donne directement un document deja compiler pas d erreur",
+    "le paquet xr":"lien d autre fichier",
+
+    "graphicx un paquet avec une commande \\includegraphics{cheminDeLImage}":"permet d inserer des images",
+    "includegraphics[option]{cheminFichier}": "voir les options page 29",
+
+    "definir une commande":"page 31, newcommand renewcommand providecommand tous on la meme forme",
+    "\\newcomand[{son nom ex: \\cursus}{son code ex: info}": "je suis en \\cursus",
+    "le paqeut xspace":"a mettre en fin dans le deuxieme argument de newcommand page 33",
+
+    "command avec argument":"page 33",
+    "se sera le nombre d argument entre corchet et son placement par rapport au code":"\newcommand{\\strong}[1]{\textbf{#1}",
+
+    "command avec argument optionnel":{
+        "Page 34":"un peu plsu compliquer",
+        "\newcommand{\\pluriel}[2][s]{#2#1\\xspace}":"ici justement la valeur du premier argument et optionnelle avec [s]  une valeur par defaut"
+
+    },
+    "pour aller plus loin commande":{
+        "la commande":"\newenvironnement",
+        "xifthen":"des confitions ....",
+        "Page35":"les commandes"
+    }
+}

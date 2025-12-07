@@ -1,0 +1,49 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{amsthm}
+
+\author{Mustafa}
+\title{Graisse}
+\date{\today}
+
+%Question 6
+\newcommand{\strong}[1]{{\bfseries #1}\xspace}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+%Question 5
+\textbf{Mustafa}
+\bfseries
+Mustafa
+\textmd{text en graisse moyenne}
+\mdseries
+text en graisse moyenne
+\begin{flushleft}
+    %Question 3
+    Attention, \(2 + 2 = 2 \times 2\) mais \(3 + 3 \neq 3 \times 3\). \\
+    %Question 4, il n y a que le text du mode math qui est en gras pas le reste
+    \bfseries 
+    Attention, \(2 + 2 = 2 \times 2\) mais \(3 + 3 \neq 3 \times 3\). \\
+    %Question 5 TOUT le texte est en gras
+    \mathversion{bold}
+
+    Attention, \(2 + 2 = 2 \times 2\) mais \(3 + 3 \neq 3 \times 3\). \\
+
+\strong{Bonjour monde}.
+\end{flushleft}
+\end{document}

@@ -1,0 +1,72 @@
+%exercice 3
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+%Question 3
+\usepackage{amsthm} % paquet qui fournit des commandes 
+%qui inclues des environnements theorem/ proof = preuve ....
+
+\title{Mathématique discret}
+\author{Mustafa Kaya}
+\date{\today}
+
+\newtheorem{theorem}{Théorème}
+
+\begin{document}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+%Question 2
+$\forall_{n} \in \mathbb{N}$
+
+\begin{theorem}
+    Pour tout entier n, la somme des n premiers entier 
+    naturels est égal à la moitié du produit de n par $(n - 1)$.
+
+\end{theorem}
+
+
+
+
+
+
+
+
+
+% Question 5
+\begin{proof}
+    Soit $n \in \mathbb{N}$.
+    Notons $S_n$ la somme des $n$ premiers entiers naturels.
+    Alors :
+    \begin{align*}
+        S_n &= \sum_{i = 0}^{n - 1} i
+        = 0 + 1 + \cdots + (n - 2) + (n - 1)
+        & \text{par définition} \\
+        &= \sum_{i = 0}^{n - 1} (n - 1 - i)
+        = (n - 1) + (n - 2) + \cdots + 1 + 0
+        & \text{par commutativité} \\
+    \end{align*}
+
+    En sommant les deux formes de la somme $S_n$ données ci-dessus,
+    nous pouvons obtenir :
+    \begin{align*}
+        2 \times S_n
+        &= \left( \sum_{i = 0}^{n - 1} i \right)
+        + \left( \sum_{i = 0}^{n - 1} (n - 1 - i) \right) \\
+        &= \sum_{i = 0}^{n - 1} (i + (n - 1 - i))
+        & \text{par associativité et commutativité} \\
+        &= n(n-1) & \text{On divise ensuite par 2 des deux coté}\\
+        &= \frac{2 \times S_{n}}{{2}} = \frac{n(n-1)}{2}
+    \end{align*}
+
+    \emph{La somme de 0 jusqu'aà n-1 entier naturel est donc : $\frac{n(n-1)}{2}$}
+\end{proof}
+
+%Question 11 et 12 flemme 
+\end{document}

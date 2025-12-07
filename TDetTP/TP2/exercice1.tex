@@ -1,0 +1,53 @@
+%exercice 1
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\title{Echauffement}
+\author{Mustafa Kaya}
+\date{\today}
+
+\begin{document}
+\begin{titlepage}
+    \maketitle
+    % Question 8
+    \tableofcontents
+\end{titlepage}
+
+%Question 6 (non les references ne changent pas)
+\section{Liste numéroter}
+% Question 2
+\begin{enumerate}
+    \item banane \ref{section/secondSection} % Question 7
+    \item kiwi \ref{section/secondSection}
+    \item orange \label{item/etiquetteOrange} \ref{section/secondSection}
+    % Question 3
+    \begin{enumerate}
+        \item fraise
+        \item poire \label{item/etiquettePoire}
+        \item framboise
+    \end{enumerate}
+    \item pomme \ref{section/secondSection}
+\end{enumerate}
+
+\section{Liste non numéroter} \label{section/secondSection}
+
+\begin{itemize}
+    \item banane \ref{item/etiquetteOrange} % Question 4 (deux compilation)
+    \item kiwi \ref{item/etiquetteOrange}
+    \item orange \ref{item/etiquetteOrange}
+    \item pomme \ref{item/etiquetteOrange}
+\end{itemize}
+
+\section{Liste descriptive}
+
+\begin{description}
+    \item banane \ref{item/etiquettePoire} % Question 5 (deux compilation)
+    \item kiwi \ref{item/etiquettePoire}
+    \item orange \ref{item/etiquettePoire}
+    \item pomme \ref{item/etiquettePoire}
+\end{description}
+\end{document}

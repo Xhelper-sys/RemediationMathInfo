@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}    % Indispensable pour les couleurs
+\usepackage{listings}  % Indispensable pour le code
+
+\begin{document}
+
+\section{Exemple Python}
+
+Voici un exemple de classe en Python avec coloration syntaxique :
+
+% J'ai compacté les options pour éviter le bug des lignes vides
+\begin{lstlisting}[language=Python, basicstyle=\small\ttfamily, keywordstyle=\color{blue}\bfseries, stringstyle=\color{orange}, commentstyle=\color{green!50!black}\itshape, frame=single, numbers=left, numberstyle=\tiny\color{gray}, showstringspaces=false, tabsize=4, breaklines=true]
+import math
+
+class Calculateur:
+    """ Ceci est une classe de demonstration """
+    
+    def __init__(self, valeur):
+        self.valeur = valeur
+        
+    def racine_carree(self):
+        # On utilise la bibliotheque math
+        if self.valeur < 0:
+            return None
+        return math.sqrt(self.valeur)
+
+# Test du programme
+if __name__ == "__main__":
+    mon_calc = Calculateur(25)
+    print(f"La racine est : {mon_calc.racine_carree()}")
+\end{lstlisting}
+
+\end{document}

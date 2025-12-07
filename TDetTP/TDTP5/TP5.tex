@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings} % Pour le code (Question 4)
+\usepackage{graphicx} % Pour les images (Question 6)
+\usepackage{xcolor}   % Optionnel, mais rend le code plus joli
+
+% Configuration globale ou par défaut pour listings (Question 4b, 4c, 4d)
+\lstset{
+    basicstyle=smallttfamily, % Fonte monospace et petite taille
+    columns=fixed,              % Alignement strict des caractères
+    tabsize=2,                  % Taille des tabulations
+    frame=none,                 % Pas de cadre par défaut
+    breaklines=true
+}
+
+\begin{document}
+
+% Question 1  Création de la section et de la liste
+\section{Exercice « Mise en place »}
+
+\begin{enumerate}
+    % Question 2, 3 et 4  Commandes Shell (arborescence) avec le paquet listings
+    \item Commandes pour l'arborescence 
+    % Attention  Remplace les commandes ci-dessous par celles que tu as vraiment utilisées
+    % L'option gobble=4 permet d'ignorer les 4 espaces d'indentation du code LaTeX
+    \begin{lstlisting}[language=bash, keywordstyle=bfseries, gobble=4]
+    mkdir repoC
+    cd repoC
+    touch correction.tex
+    mkdir -p sousdossier
+    \end{lstlisting}
+
+    % Question 5  Commandes Shell (git version)
+    \item Commandes pour la version git 
+    \begin{lstlisting}[language=bash, keywordstyle=bfseries, gobble=4]
+    git init
+    git add .
+    git commit -m Initialisation
+    \end{lstlisting}
+
+    % Question 6  Correction de la question 3 de l'exercice 1 (.gitignore et image)
+    \item On vérifie l'état avec la commande lstinlinegit status. % Question 6e
+    
+    \Voici le contenu du fichier ignoré 
+    % Question 6a, 6b, 6c  Import du fichier .gitignore
+    \lstinputlisting[frame=single, linewidth=.25linewidth]{.gitignore}
+    
+    Et voici le résultat visuel 
+    % Question 6d  Insertion de l'image (assure-toi d'avoir une image, ex status.png)
+    begin{center}
+        includegraphics[width=.5linewidth]{capture_git_status.png}
+    end{center}
+
+    \item % Élément vide pour la question 4 (réservé pour la suite)
+    \item % Élément vide pour la question 5 (réservé pour la suite)
+
+\end{enumerate}
+
+\end{document}

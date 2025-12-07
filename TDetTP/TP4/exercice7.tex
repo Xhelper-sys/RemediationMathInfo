@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{amsthm}
+
+\author{Mustafa}
+\title{Synchonisation}
+\date{\today}
+
+\newcommand{\name}[2]{#1 #2}
+\newcommand{\mystyle}[2][]{{#1#2}}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+Ça, \mystyle[\bfseries\slshape]{c’est} du \mystyle[\scshape\large]{style} 
+\mystyle[\bfseries\slshape]{\name{Mustafa}{Kaya}}
+\mystyle[\scshape\large]{\name{Mustafa}{Kaya}}
+\end{document}

@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\begin{document}
+
+\section{Exemple de code Bash stylisé}
+
+% J'ai compacté les options pour éviter les espaces invisibles problématiques
+\begin{lstlisting}[language=bash, basicstyle=\small\ttfamily\bfseries, columns=fixed, keywordstyle=\color{blue}\bfseries, stringstyle=\color{orange}, commentstyle=\color{gray}\itshape, frame=single, breaklines=true, showstringspaces=false, tabsize=2, gobble=4]
+    # 1. Creation de l'arborescence
+    mkdir repoC
+    cd repoC
+    
+    # 2. Creation des fichiers
+    touch correction.tex
+    echo "Ceci est un test" > fichier.txt
+
+    # 3. Versionnage avec Git
+    git add .
+    git commit -m "Test"
+\end{lstlisting}
+
+\end{document}
