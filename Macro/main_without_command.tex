@@ -32,6 +32,15 @@
 \usepackage{minted} 
 \usepackage{float} 
 
+% Configuration globale ou par défaut pour listings (Question 4b, 4c, 4d)
+\lstset{
+    basicstyle=\small\ttfamily, % Fonte monospace et petite taille
+    columns=fixed,              % Alignement strict des caractères
+    tabsize=2,                  % Taille des tabulations
+    frame=none,                 % Pas de cadre par défaut
+    breaklines=true
+}
+
 %\setcounter{tocdepth}{2} % table des matieres a quelle profondeur il faut aller
 %\newtheorem{theorem}{Théorème}
 %\newcommand{\myname}{Kaya Mustafa\xspace}
@@ -46,4 +55,11 @@
 \begin{titlepage}
     \maketitle
 \end{titlepage}
+
+\lstinputlisting[frame=single, linewidth=.25\linewidth]{.gitignore}
+\begin{center}
+\includegraphics[width=.5\linewidth]{capture_git_status.png}
+\end{center}
+
+    
 \end{document}
